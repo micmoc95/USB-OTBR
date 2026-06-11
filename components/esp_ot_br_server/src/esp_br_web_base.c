@@ -4,7 +4,8 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#include "esp_br_web_base.h"
+#include "../../../components/esp_ot_br_server/private_include/esp_br_web_base.h"
+
 #include "cJSON.h"
 #include "esp_app_desc.h"
 #include "esp_check.h"

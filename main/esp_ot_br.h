@@ -1,5 +1,5 @@
-// esp-idf/components/console
-#include "esp_console.h"
+#include "esp_ot_cli_extension.h"
+#include "ot_examples_common.h"
 
 // esp-idf/components/esp_common
 #include "esp_check.h"
@@ -10,15 +10,16 @@
 
 // esp-idf/components/esp_hw_support
 #include "esp_mac.h"
+#include "esp_eth.h"
 
 // esp-idf/components/esp_netif
 #include "esp_netif.h"
+#include "esp_netif_types.h"
 
 // esp-idf/components/log
 #include "esp_log.h"
 
 // esp-idf/components/lwip
-#include "lwip/netif.h"
 #include "lwip/esp_netif_net_stack.h"
 
 // esp-idf/components/nvs_flash
@@ -39,20 +40,13 @@
 // esp-idf/components/vfs
 #include "esp_vfs_eventfd.h"
 
-// usb-thread-br/components/esp_ot_br_server
-#include "esp_br_web.h"
-
-// usb-thread-br/components/esp_ot_cli_extension
-#include "esp_ot_cli_extension.h"
-#include "esp_ot_ota_commands.h"
-
-// usb-thread-br/components/ot_examples_common
-#include "ot_examples_common.h"
-
-// usb-thread-br/managed_components/espressif__esp_tinyusb
+// esp-idf/components/esp_tinyusb
 #include "tinyusb_default_config.h"
 #include "tinyusb.h"
 #include "tinyusb_net.h"
+
+// usb-thread-br/components/esp_ot_br_server
+#include "esp_br_web.h"
 
 // usb-thread-br/managed_components/espressif__mdns
 #include "mdns.h"

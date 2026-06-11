@@ -4,9 +4,9 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#include "esp_br_web_api.h"
+#include "../../../components/esp_ot_br_server/private_include/esp_br_web_api.h"
+
 #include "cJSON.h"
-#include "esp_br_web_base.h"
 #include "esp_check.h"
 #include "esp_err.h"
 #include "esp_log.h"
@@ -22,6 +22,8 @@
 #include "string.h"
 #include <assert.h>
 #include <stdint.h>
+
+#include "../../../components/esp_ot_br_server/private_include/esp_br_web_base.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/portmacro.h"
 #include "freertos/semphr.h"

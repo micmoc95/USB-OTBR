@@ -6,6 +6,8 @@
  * Wi-Fi Configuration and SoftAP support for ESP Thread Border Router
  */
 
+#include "../../../components/esp_ot_br_server/include/esp_br_wifi_config.h"
+
 #include <assert.h>
 #include <errno.h>
 #include <fcntl.h>
@@ -13,14 +15,13 @@
 #include <string.h>
 #include <unistd.h>
 
+#include "../../../components/esp_ot_br_server/include/esp_br_web.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/event_groups.h"
 #include "freertos/semphr.h"
 #include "freertos/task.h"
 
 #include "cJSON.h"
-#include "esp_br_web.h"
-#include "esp_br_wifi_config.h"
 #include "esp_check.h"
 #include "esp_err.h"
 #include "esp_event.h"

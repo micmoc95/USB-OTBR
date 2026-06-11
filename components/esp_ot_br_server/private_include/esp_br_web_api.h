@@ -11,7 +11,7 @@ extern "C" {
 #endif
 
 #include "cJSON.h"
-#include "esp_br_web_base.h"
+#include "../../../components/esp_ot_br_server/private_include/esp_br_web_base.h"
 #include "esp_http_server.h"
 #include "openthread/error.h"
 
