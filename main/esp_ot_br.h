@@ -1,5 +1,9 @@
+#include "protocol_examples_common.h"
+#include "esp_ot_wifi_cmd.h"
 #include "esp_ot_cli_extension.h"
 #include "ot_examples_common.h"
+#include "esp_timer.h"
+#include "driver/gpio.h"
 
 // esp-idf/components/esp_common
 #include "esp_check.h"
